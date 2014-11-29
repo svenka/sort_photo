@@ -9,7 +9,7 @@ public class JpgExtension implements FilenameFilter  {
 	
 	JpgExtension(String ext)
 	{
-	this.extension="."+ext;	
+	this.extension="."+ext;
 	}
 	
 	@Override

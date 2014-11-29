@@ -13,7 +13,7 @@ public class Gui extends JFrame {
 	Gui()
 	{
 	setBounds(0, 0, 500, 500);
-	//way="/";
+	
 	
 	
 }

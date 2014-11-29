@@ -19,7 +19,7 @@ public class Main {
 		}
 		else
 			
-	    System.out.println("Amout="+s.length);
+	    System.out.println("All Amout="+s.length);
 		for (int i=0; i < s.length; i++) 
 		{ 
 		System.out.println(s[i]); 
