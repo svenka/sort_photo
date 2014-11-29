@@ -14,12 +14,12 @@ public class Main {
 	{
 		if(s.length==0)
 		{
-			System.out.println("Необходимых файлов нет");
+			System.out.println("These files do not exist");
 			System.exit(0);
 		}
 		else
 			
-	    System.out.println("kolvo="+s.length);
+	    System.out.println("Amout="+s.length);
 		for (int i=0; i < s.length; i++) 
 		{ 
 		System.out.println(s[i]); 
@@ -54,11 +54,11 @@ public class Main {
 		    
 		    if (dest.exists())
 		    {
-			System.out.println("файл создан");
+			System.out.println("File has been created");
 			
 			}
 			else
-			System.out.println("файл не создан");
+			System.out.println("File won't created");
 		    datepath.mkdir();
 		    datepath.mkdirs();
 		    copy(source, dest);
@@ -66,8 +66,9 @@ public class Main {
 		        
 		   catch(FileAlreadyExistsException e)
 		    {
-		    System.out.println("файл уже создан="+e);
-		    }}
+		    System.out.println("File has already been created ="+e);
+		    }
+		    }
 		 System.exit(0);
 		
 	}

@@ -23,14 +23,14 @@ public class Gui extends JFrame {
 	{
 		JFileChooser dialog=new JFileChooser();
 		dialog.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-		dialog.setApproveButtonText("Выбрать");
-		dialog.setDialogTitle("Выбор Папки");
+		dialog.setApproveButtonText("Select");
+		dialog.setDialogTitle("Selecting a folder");
 		dialog.setDialogType(JFileChooser.OPEN_DIALOG);
 		dialog.showOpenDialog(this);
 		dialog.setVisible(true);
 		System.out.println(dialog.getSelectedFile());
 		way=dialog.getSelectedFile().toString();
-		System.out.println("Путь ="+way);
+		System.out.println("Way ="+way);
 		return way;
 		
 	}
