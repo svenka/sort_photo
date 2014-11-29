@@ -86,47 +86,7 @@ public class Main {
 		showlistfiles(s);
 		working(s,dirname);
 		
-	/*	for (int i=0; i < s.length; i++) { 
-		String way=dirname+"/"+s[i];
-		File source = new File(way);
-	    Path p = source.toPath();
-	    System.out.println("Dir="+p);
-	    BasicFileAttributes attr = Files.readAttributes(p, BasicFileAttributes.class);
-	    String t=attr.lastModifiedTime().toString();
-	    String date=(String) t.subSequence(0, 10);
-	    System.out.println(date);
-	    String c=way.substring(0, way.length()-13)+"/"+date;
-	    System.out.println(c);
-	    File datepath=new File(c);
-	        
-	    try
-	    {
-	    File dest = new File(dirname+"/"+date+"/"+s[i]);
-	    dest.getParentFile().mkdir();
-	    
-	    if (dest.exists())
-		{System.out.println("файл создан");}
-	    
-	    else
-		System.out.println("файл не создан");
-	
-	    datepath.mkdir();
-	    datepath.mkdirs();
-	 
-        copy(source, dest);
-      
-	    }
-	        
-	    catch(FileAlreadyExistsException e)
-	    {
-	    System.out.println("файл уже создан="+e);
-	    }
-	 
-	   
-	    
-			
-		}*/
-	
+		
 	}
 	
 	}
